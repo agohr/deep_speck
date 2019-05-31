@@ -42,7 +42,7 @@ Instructions for each of the experiments:
 
 1. test_key_recovery.py: run from terminal using the command python3 test_key_recovery.py .
 
-Note that this will run the 11-round attack 100 times and then run a 12-round attack (not described in the paper but using exactly the same code) 20 times. The latter will take some time unless a fast GPU is available (one run of the 12-round attack should take roughly 12 hours on a quad-core PC without GPU). Note that the 12-round attack is with these settings successful only in about 40 percent of cases, so one run is likely not going to be sufficient to demonstrate that it works. Remove the last few lines of the script to turn either behaviour off.
+Note that this will run the 11-round attack 100 times and then run a 12-round attack (not described in the paper but using exactly the same code) 20 times. The latter will take some time unless a fast GPU is available (one run of the 12-round attack should take roughly 12 hours on a quad-core PC without GPU). Note that the 12-round attack is with these settings successful only in about 40 percent of cases, so one run is likely not going to be sufficient to demonstrate that it works. Remove the last few lines of the script to turn the 12-round attack off.
 
 The 11-round attack will produce three files that contain numpy arrays with the following information:
 
