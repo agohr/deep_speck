@@ -183,7 +183,7 @@ void calc_ddt(uint32_t in_diff, int num_rounds){
     cout << "Rounds: " << dec << (i+1) <<", Acc: " << acc << ", tpr:" << tpr << ", tnr:" << tnr << endl;
     stringstream del; del << hex << in_diff;
     string delta = del.str();
-    string rounds = to_string(i); string filename = "ddt_"+ delta +"_rounds.bin";
+    string rounds = to_string(i); string filename = "ddt_"+ delta +"_" + rounds + "rounds.bin";
     ofstream fout(filename, ios::out | ios::binary);
     fout.write((char*)&ddt[0], ddt.size() * sizeof(double));
     fout.close();
