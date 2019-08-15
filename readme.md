@@ -1,4 +1,4 @@
-#A) Summary
+# A) Summary
 
 This repository holds supplementary code and data to the paper "Improving Attacks on Round-Reduced Speck32/64 Using Deep Learning". In particular, it contains:
 
@@ -16,7 +16,7 @@ This repository holds supplementary code and data to the paper "Improving Attack
 
 This archive also contains precomputed key-rank data for the 9-round attack (subdirectory data_9r_attack), data on the key dependence of the 7-round distinguisher, the complete learning history of our best 5-round neural distinguisher (as referenced in the paper) and the wrong key response profiles for all of the supplied pre-trained neural networks except the 5-round one. The learning history of the 5-round network described in the paper is stored as a pickled dictionary in the supplementary data subdirectory.
 
-#B) Dependencies and system requirements
+# B) Dependencies and system requirements
 
 Requirements for running the main attack: python3, current keras installation, h5py. Tested with the tensorflow backend, but the code should be backend-agnostic. Training and evaluation code have the same requirements. Tested configuration: keras 2.1.5, tensorflow 1.6.0, h5py 2.7.1.
 
@@ -26,7 +26,7 @@ The C++ programs should work with any version of g++ that supports C++2014. g++7
 
 All programs in this code repository (with the possible exception of the key rank and DDT calculation scripts) should work reasonably well on a standard PC. In particular the 11-round attack code should be quite fast without GPU support.
 
-#C) Compiling the cpp-files
+# C) Compiling the cpp-files
 
 To build the C++ programs, run make in the cpp subdirectory. This will produce two executable files:
 
@@ -34,7 +34,7 @@ To build the C++ programs, run make in the cpp subdirectory. This will produce t
 
 - speck_ddt: calculates the difference distribution of Speck with the input difference used in the paper. This takes significant memory, hard drive space and computing power.
 
-#D) Running the experiments
+# D) Running the experiments
 
 Each of the python files mentioned contains a script that will run a particular set of experiments when run from the terminal using python3.
 
@@ -68,11 +68,11 @@ Instructions for each of the experiments:
 
 8. **key_averaging.py**: implements KeyAveraging and the creation of high-quality training data using the output of KeyAveraging.
 
-#E) Final remarks
+# E) Final remarks
 
 The pre-trained networks included in this directory are all small networks with just one residual block. In the five and six round cases, their predictive performance is therefore slightly lower than claimed in the paper. Run the five-round training script to obtain a five-round distinguisher with the performance given in the paper.
 
-#F) Citing
+# F) Citing
 
 If you use the code in this repository for your own research and publish about it, please cite the paper:
 
