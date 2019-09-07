@@ -18,6 +18,8 @@ This archive also contains precomputed key-rank data for the 9-round attack (sub
 
 # B) Dependencies and system requirements
 
+The Python modules provided depend on each other. Download the full archive to run the experiments.
+
 Requirements for running the main attack: python3, current keras installation, h5py. Tested with the tensorflow backend, but the code should be backend-agnostic. Training and evaluation code have the same requirements. Tested configuration: keras 2.1.5, tensorflow 1.6.0, h5py 2.7.1.
 
 The neural difference search demonstrator additionally needs a current version of scikit-learn to be installed. Tested version: scikit-learn 0.19.1.
@@ -76,5 +78,5 @@ The pre-trained networks included in this directory are all small networks with 
 
 If you use the code in this repository for your own research and publish about it, please cite the paper:
 
-Aron Gohr, Improving Attacks on Round-Reduced Speck32/64 Using Deep Learning, Advances in Cryptology - CRYPTO 2019 (to appear)
+Gohr A. (2019) Improving Attacks on Round-Reduced Speck32/64 Using Deep Learning. In: Boldyreva A., Micciancio D. (eds) Advances in Cryptology – CRYPTO 2019. CRYPTO 2019. Lecture Notes in Computer Science, vol 11693. Springer, Cham
 
